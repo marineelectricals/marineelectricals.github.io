@@ -1,4 +1,4 @@
-Notification.requestPermission(function(status) {
+/*Notification.requestPermission(function(status) {
     console.log('Notification permission status:', status);
 });
 
@@ -23,14 +23,13 @@ function displayNotification() {
       reg.showNotification('Hello world!', options);
     });
   }
-}
+}*/
 
 
 window.addEventListener('load', function() {
   console.log('Page is loaded');
 });
 
-/*
 const button = document.getElementById('subscribe');
 button.addEventListener('click', () => {
   Notification.requestPermission().then((result) => {
@@ -53,7 +52,7 @@ function randomNotification() {
   setTimeout(randomNotification, 30000);
 }
 
-if ('serviceWorker' in navigator && 'PushManager' in window) {
+/*if ('serviceWorker' in navigator && 'PushManager' in window) {
   console.log('Service Worker and Push is supported');
 
   navigator.serviceWorker.register('sw.js')
@@ -68,5 +67,4 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
 } else {
   console.warn('Push messaging is not supported');
   pushButton.textContent = 'Push Not Supported';
-}
-*/
+}*/
