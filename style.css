@@ -1,3 +1,15 @@
+@media screen and (min-width: 601px) {
+  div.device-scrn {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.device-scrn {
+    font-size: 10px;
+  }
+}
+
 li {
   text-align: left;
 }
@@ -14,18 +26,6 @@ div {
 div.device-scrn {
   //background-color: lightgrey;
   //padding: 20px;
-}
-
-@media screen and (min-width: 601px) {
-  div.device-scrn {
-    font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  div.device-scrn {
-    font-size: 10px;
-  }
 }
     
 .section{
