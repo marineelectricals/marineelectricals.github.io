@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" type="text/javascript"></script>
+  </head>
+
+<!--/html-->
+  <div class="section button text-white">
+    <b>STAGEWISE NOTIFICATIONS</b> || 
+    Press to get notifications:
+    <button id="subscribe"> Subscribe </button>
+    || Press to stop getting notifications:
+    <button id="unsubscribe"> Unsubscribe </button>
+  </div>
+  
+  <div class="section prod">
+    <div class="row-title text-white">STAGEWISE (LAST 10) - PRODUCTION</div>
+      <div>    
+        <div class="column device-scrn">
+          Stage 1
+          <ul>
+            <? for (var i = 0; i<10; i++){ ?>
+              <li> <?!= ProdStagewiseDetails.prods1JobNumber[i] ?> </li>
+            <? } ?>
+          </ul>
+        </div>
+        <div class="column device-scrn">
+          Stage 2
+          <ul>
+            <? for (var i = 0; i<10; i++){ ?>
+              <li> <?!= ProdStagewiseDetails.prods2JobNumber[i] ?> </li>
+            <? } ?>
+          </ul>
+        </div><div class="column device-scrn">
+          Stage 3A
+          <ul>
+            <? for (var i = 0; i<10; i++){ ?>
+              <li> <?!= ProdStagewiseDetails.prods3AJobNumber[i] ?> </li>
+            <? } ?>
+          </ul>
+        </div>
+        <div class="column device-scrn">
+          Stage 3B
+          <ul>
+            <? for (var i = 0; i<10; i++){ ?>
+              <li> <?!= ProdStagewiseDetails.prods3BJobNumber[i] ?> </li>
+            <? } ?>
+          </ul>
+        </div>
+        <div class="column device-scrn">
+          Stage FQC
+          <ul>
+            <? for (var i = 0; i<10; i++){ ?>
+              <li> <?!= ProdStagewiseDetails.prodFQCJobNumber[i] ?> </li>
+            <? } ?>
+          </ul>
+        </div>
+      </div>
+  </div>
+
+  <div class="section qc">
+    <div class="row-title text-white">STAGEWISE (LAST 10) - QUALITY CONTROL</div>
+      <div>    
+        <div class="column device-scrn">
+          Stage 1
+          <ul>
+            <? for (var i = 0; i<10; i++){ ?>
+              <li> <?!= QCStagewiseDetails.qcs1JobNumber[i] ?> </li>
+            <? } ?>
+          </ul>
+        </div>
+        <div class="column device-scrn">
+          Stage 2
+          <ul>
+            <? for (var i = 0; i<10; i++){ ?>
+              <li> <?!= QCStagewiseDetails.qcs2JobNumber[i] ?> </li>
+            <? } ?>
+          </ul>
+        </div><div class="column device-scrn">
+          Stage 3A
+          <ul>
+            <? for (var i = 0; i<10; i++){ ?>
+              <li> <?!= QCStagewiseDetails.qcs3AJobNumber[i] ?> </li>
+            <? } ?>
+          </ul>
+        </div>
+        <div class="column device-scrn">
+          Stage 3B
+          <ul>
+            <? for (var i = 0; i<10; i++){ ?>
+              <li> <?!= QCStagewiseDetails.qcs3BJobNumber[i] ?> </li>
+            <? } ?>
+          </ul>
+        </div>
+        <div class="column device-scrn">
+          Stage FQC
+          <ul>
+            <? for (var i = 0; i<10; i++){ ?>
+              <li> <?!= QCStagewiseDetails.qcFQCJobNumber[i] ?> </li>
+            <? } ?>
+          </ul>
+        </div>
+      </div>
+  </div>
+</html>
