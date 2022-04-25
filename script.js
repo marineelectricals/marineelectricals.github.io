@@ -31,7 +31,7 @@ window.addEventListener('load', function() {
 });
 
 const button = document.getElementById('subscribe');
-button.addEventListener('click', () => {
+button.addEventListener('onclick', () => {
   Notification.requestPermission().then((result) => {
     if (result === 'granted') {
       randomNotification();
