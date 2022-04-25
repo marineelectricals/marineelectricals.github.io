@@ -5,6 +5,9 @@
     <title>Stage-wise Last 10 offered Jobs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <!-- Load jQuery and Sheetrock from Unpkg -->
+    <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://unpkg.com/sheetrock@1.2.0/dist/sheetrock.min.js"></script>
     <script src="script.js" type="text/javascript"></script>
   </head>
 
@@ -23,6 +26,7 @@
         <div class="column device-scrn">
           Stage 1
           <ul>
+            <script id="production" ></script>
             <? for (var i = 0; i<10; i++){ ?>
               <li> <?!= ProdStagewiseDetails.prods1JobNumber[i] ?> </li>
             <? } ?>
