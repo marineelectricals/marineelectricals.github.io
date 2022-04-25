@@ -1,88 +1,88 @@
-  li {
-    text-align: left;
-  }
-  div {
-    //Box Dimension Parameters
-    width: auto;
-    border-radius: 5px;
+li {
+  text-align: left;
+}
+div {
+  //Box Dimension Parameters
+  width: auto;
+  border-radius: 5px;
 
-    //Text Font Parameters
-    text-align: center;
-    font-family: Trebuchet MS, bold;
-  }
+  //Text Font Parameters
+  text-align: center;
+  font-family: Trebuchet MS, bold;
+}
 
+div.device-scrn {
+  //background-color: lightgrey;
+  //padding: 20px;
+}
+
+@media screen and (min-width: 601px) {
   div.device-scrn {
-    //background-color: lightgrey;
-    //padding: 20px;
+    font-size: 20px;
   }
+}
 
-  @media screen and (min-width: 601px) {
-    div.device-scrn {
-      font-size: 20px;
-    }
+@media screen and (max-width: 600px) {
+  div.device-scrn {
+    font-size: 10px;
   }
-
-  @media screen and (max-width: 600px) {
-    div.device-scrn {
-      font-size: 10px;
-    }
-  }
+}
     
-  .section{
-    //Box Dimension Parameters
-    padding: 1px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.section{
+  //Box Dimension Parameters
+  padding: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
-    //Box Style Parameters
-    box-shadow: 0px 15px 25px -20px grey;
-    border-radius: 5px;
-  }
+  //Box Style Parameters
+  box-shadow: 0px 15px 25px -20px grey;
+  border-radius: 5px;
+}
+
+.prod {
+  //Box Style Parameters
+  background-color:#00897b;
+}
+   
+.qc {
+  //Box Style Parameters
+  background-color:#482980;
+}
+
+.text-white {
+  //Text Font Parameters
+  color: white;
+}
     
-  .prod {
-    //Box Style Parameters
-    background-color:#00897b;
-  }
-    
-  .qc {
-    //Box Style Parameters
-    background-color:#482980;
-  }
+.row-title {
+  //Box Dimension Parameters
+  margin-top: 10px;
+     
+  //Text Font Parameters
+  font-size: 3vw;
+  font-weight: bold;
+}
 
-  .text-white {
-    //Text Font Parameters
-    color: white;
-  }
-    
-  .row-title {
-    //Box Dimension Parameters
-    margin-top: 10px;
-      
-    //Text Font Parameters
-    font-size: 3vw;
-    font-weight: bold;
-  }
+.column {
+  //Box Dimension Parameters
+  width: 16%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
 
-  .column {
-    //Box Dimension Parameters
-    width: 16%;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 5px;
+  //Box Style Parameters
+  //background-color: rgba(255, 255, 255, .5);
+  background-color: #ffffff;
+  backdrop-filter: blur(5px);
+  display: inline-block;
+  float: center;
 
-    //Box Style Parameters
-    //background-color: rgba(255, 255, 255, .5);
-    background-color: #ffffff;
-    backdrop-filter: blur(5px);
-    display: inline-block;
-    float: center;
+  //Text Font Parameters
+  font-size: 2vw;
+}
 
-    //Text Font Parameters
-    font-size: 2vw;
-  }
-
-  .button {
-    padding: 10px;
-    background-color: #221b88;
-    //box-shadow:0px 0px #ffffff;
-  }
+.button {
+  padding: 10px;
+  background-color: #221b88;
+  //box-shadow:0px 0px #ffffff;
+}
