@@ -8,9 +8,20 @@ $('production').sheetrock({
   fetchSize: 11
 });
 
+
+
 window.addEventListener('load', function() {
   console.log('Page is loaded');
 });
+
+const button = document.getElementById('subscribe');
+button.addEventListener('click', () => {
+  Notification.requestPermission().then((result) => {
+    if (result === 'granted') {
+      randomNotification();
+    }
+  });
+})
 
 Notification.requestPermission(function(status) {
     console.log('Notification permission status:', status);
