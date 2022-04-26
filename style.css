@@ -1,4 +1,10 @@
-background-image: linear-gradient(135deg, #999999, #e5e5e5);
+html {
+  background-image: linear-gradient(135deg, #CC95C0, #DBD4B4, #7AA1D2);
+
+  /*Text Font Parameters*/
+  text-align: center;
+  font-family: Trebuchet MS, bold;
+}
 
 @media screen and (min-width: 601px) {
   div.device-scrn {
@@ -19,16 +25,7 @@ div {
   /*Box Dimension Parameters*/
   width: auto;
   border-radius: 5px;
-
-  /*Text Font Parameters*/
-  text-align: center;
-  font-family: Trebuchet MS, bold;
 }
-
-/*div.device-scrn {
-  //background-color: lightgrey;
-  //padding: 20px;
-}*/
     
 .section{
   /*Box Dimension Parameters*/
@@ -37,23 +34,24 @@ div {
   margin-bottom: 10px;
 
   /*Box Style Parameters*/
-  box-shadow: 0px 15px 25px -20px grey;
+  /*box-shadow: 0px 15px 25px -20px grey;*/
   border-radius: 5px;
 }
 
 .prod {
   /*Box Style Parameters*/
-  background-color:#00897b;
+  background-image: linear-gradient(135deg, #00897b, #1f4037);
 }
    
 .qc {
   /*Box Style Parameters*/
-  background-color:#482980;
+  background-image: linear-gradient(135deg, #482980, #4A00E0);
 }
 
-.btn-bg-colour {
+.btn-section {
   /*Box Style Parameters*/
-  background-color:#5b55ff;
+  padding: 10px;
+  background-image: linear-gradient(135deg, #0F2027, #203A43, #2C5364);
 }
 
 .text-white {
@@ -95,7 +93,7 @@ div {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 8px;
+  font-size: 12px;
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
@@ -105,7 +103,7 @@ div {
 .btn-subscribe {
   background-color: white; 
   color: black; 
-  border: 2px solid #4CAF50;
+  border: 3px solid #4CAF50;
 }
 
 .btn-subscribe:hover {
@@ -116,7 +114,7 @@ div {
 .btn-unsubscribe {
   background-color: white; 
   color: black; 
-  border: 2px solid #008CBA;
+  border: 3px solid #008CBA;
 }
 
 .btn-unsubscribe:hover {
