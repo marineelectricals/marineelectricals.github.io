@@ -51,6 +51,11 @@ div {
   background-color:#482980;
 }
 
+.btn-bg-color {
+  /*Box Style Parameters*/
+  background-color:#55ff80;
+}
+
 .text-white {
   /*Text Font Parameters*/
   color: white;
