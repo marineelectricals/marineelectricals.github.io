@@ -13,6 +13,7 @@ Notification.requestPermission(function(status) {
 });
 }
 
+
 const button2 = document.getElementById("unsubscribe");
 button2.addEventListener("click", spawnNotification);
 
