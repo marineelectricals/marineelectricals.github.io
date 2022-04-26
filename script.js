@@ -1,3 +1,5 @@
+https://sheets.googleapis.com/v4/spreadsheets/11T168daP9NRW9aA8zEO7LpTcnDgeU6SKEs9JPq9XLWE/values/PRODUCTION?key=AIzaSyBqf87IMEwSLnDl_ZSil2IDLS9oFszZgP8
+
 /*Notification.requestPermission(function(status) {
     console.log('Notification permission status:', status);
 });
