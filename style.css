@@ -51,9 +51,9 @@ div {
   background-color:#482980;
 }
 
-.btn-bg-color {
+.btn-bg-colour {
   /*Box Style Parameters*/
-  background-color:#55ff80;
+  background-color:#5b55ff;
 }
 
 .text-white {
@@ -91,11 +91,11 @@ div {
 .button {
   border: none;
   color: white;
-  padding: 8px 16px;
+  padding: 4px 8px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 8px;
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
