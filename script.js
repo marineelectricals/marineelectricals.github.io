@@ -1,5 +1,3 @@
-https://sheets.googleapis.com/v4/spreadsheets/11T168daP9NRW9aA8zEO7LpTcnDgeU6SKEs9JPq9XLWE/values/PRODUCTION?key=AIzaSyBqf87IMEwSLnDl_ZSil2IDLS9oFszZgP8
-
 var getJSON = function(url, callback) {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url, true);
@@ -15,13 +13,17 @@ var getJSON = function(url, callback) {
     xhr.send();
 };
 
-getJSON('http://query.yahooapis.com/v1/public/yql?q=select%20%2a%20from%20yahoo.finance.quotes%20WHERE%20symbol%3D%27WRC%27&format=json&diagnostics=true&env=store://datatables.org/alltableswithkeys&callback',
+getJSON('https://sheets.googleapis.com/v4/spreadsheets/11T168daP9NRW9aA8zEO7LpTcnDgeU6SKEs9JPq9XLWE/values/PRODUCTION?key=AIzaSyBqf87IMEwSLnDl_ZSil2IDLS9oFszZgP8',
 function(err, data) {
   if (err !== null) {
     alert('Something went wrong: ' + err);
   } else {
     alert('Your query count: ' + data.query.count);
   }
+});
+
+window.addEventListener('load', function() {
+  console.log('Page is loaded');
 });
 
 
@@ -51,11 +53,6 @@ function displayNotification() {
     });
   }
 }*/
-
-
-window.addEventListener('load', function() {
-  console.log('Page is loaded');
-});
 
 const button = document.getElementById('subscribe');
 button.addEventListener('onclick', () => {
