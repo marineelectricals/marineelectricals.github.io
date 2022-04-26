@@ -12,7 +12,7 @@
     <script src="script.js" type="text/javascript"></script>
   </head>
 
-  <div class="section btn-bg-color">
+  <div class="section btn-section text-white">
     <b>STAGEWISE NOTIFICATIONS</b> || 
     Press to get notifications:
     <button id="subscribe" class="button btn-subscribe"> Subscribe </button>
@@ -23,7 +23,7 @@
   <div class="section prod">
     <div class="row-title text-white">STAGEWISE (LAST 10) - PRODUCTION</div>
       <div>    
-        <div class="column device-scrn">
+        <div class="column">
           Stage 1
           <ul>
             data[0]
@@ -33,14 +33,14 @@
             <? } ?>
           </ul>
         </div>
-        <div class="column device-scrn">
+        <div class="column">
           Stage 2
           <ul>
             <? for (var i = 0; i<10; i++){ ?>
               <li> <?!= ProdStagewiseDetails.prods2JobNumber[i] ?> </li>
             <? } ?>
           </ul>
-        </div><div class="column device-scrn">
+        </div><div class="column">
           Stage 3A
           <ul>
             <? for (var i = 0; i<10; i++){ ?>
@@ -48,7 +48,7 @@
             <? } ?>
           </ul>
         </div>
-        <div class="column device-scrn">
+        <div class="column">
           Stage 3B
           <ul>
             <? for (var i = 0; i<10; i++){ ?>
@@ -56,7 +56,7 @@
             <? } ?>
           </ul>
         </div>
-        <div class="column device-scrn">
+        <div class="column">
           Stage FQC
           <ul>
             <? for (var i = 0; i<10; i++){ ?>
@@ -70,7 +70,7 @@
   <div class="section qc">
     <div class="row-title text-white">STAGEWISE (LAST 10) - QUALITY CONTROL</div>
       <div>    
-        <div class="column device-scrn">
+        <div class="column">
           Stage 1
           <ul>
             <? for (var i = 0; i<10; i++){ ?>
@@ -78,14 +78,14 @@
             <? } ?>
           </ul>
         </div>
-        <div class="column device-scrn">
+        <div class="column">
           Stage 2
           <ul>
             <? for (var i = 0; i<10; i++){ ?>
               <li> <?!= QCStagewiseDetails.qcs2JobNumber[i] ?> </li>
             <? } ?>
           </ul>
-        </div><div class="column device-scrn">
+        </div><div class="column">
           Stage 3A
           <ul>
             <? for (var i = 0; i<10; i++){ ?>
@@ -93,7 +93,7 @@
             <? } ?>
           </ul>
         </div>
-        <div class="column device-scrn">
+        <div class="column">
           Stage 3B
           <ul>
             <? for (var i = 0; i<10; i++){ ?>
@@ -101,7 +101,7 @@
             <? } ?>
           </ul>
         </div>
-        <div class="column device-scrn">
+        <div class="column">
           Stage FQC
           <ul>
             <? for (var i = 0; i<10; i++){ ?>
