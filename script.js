@@ -17,7 +17,8 @@ button2.addEventListener("click", spawnNotification);
 function spawnNotification(body, icon, title) {
   var title = "Notify";
   var options = {
-      body: "Hi There"
+    body: "Hi There"
+    icon: "images/favicon.ico"
   }
   var notification = new Notification(title, options);
 }
