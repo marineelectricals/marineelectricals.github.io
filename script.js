@@ -22,7 +22,7 @@ function spawnNotification(title, body, icon) {
   var bodyText = jobNumber + "(" + engineer + ")";
   var options = {
     body: bodyText
-    icon: "images/favicon.ico"
+    icon: "images/MEIL Logo.png"
   }
   var notification = new Notification(title, options);
 }
