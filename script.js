@@ -23,7 +23,6 @@ function spawnNotification(title, body, icon) {
   var img = "images/MEIL Logo.png";
   var options = {
     body: bodyText
-    icon: img
   }
   var notification = new Notification(title, options);
 }
