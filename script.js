@@ -20,9 +20,10 @@ function spawnNotification(title, body, icon) {
   var jobNumber = 15000.01;
   var engineer = "engineer"
   var bodyText = jobNumber + "(" + engineer + ")";
+  var img = "images/MEIL Logo.png";
   var options = {
     body: bodyText
-    icon: "images/MEIL Logo.png"
+    icon: img
   }
   var notification = new Notification(title, options);
 }
