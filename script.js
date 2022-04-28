@@ -14,10 +14,12 @@ Notification.requestPermission(function(status) {
 const button2 = document.getElementById("unsubscribe");
 button2.addEventListener("click", spawnNotification);
 
-function spawnNotification(body, icon, title) {
-  var title = "Notify";
+function spawnNotification(title, body, icon) {
+  var dept = "Production:", stage = "S1";
+  var title = dept + " Stage - " + stage;
+  var jobNumber = 15000.01;
   var options = {
-    body: "Hi There"
+    body: jobNumber;
     icon: "images/favicon.ico"
   }
   var notification = new Notification(title, options);
