@@ -19,8 +19,9 @@ function spawnNotification(title, body, icon) {
   var title = dept + " Stage - " + stage;
   var jobNumber = 15000.01;
   var engineer = "engineer"
+  var bodyText = jobNumber + "(" + engineer + ")";
   var options = {
-    body: jobNumber + "(" + engineer + ")"
+    body: bodyText
     icon: "images/favicon.ico"
   }
   var notification = new Notification(title, options);
