@@ -19,7 +19,7 @@ function spawnNotification(title, body, icon) {
   var title = dept + " Stage - " + stage;
   var jobNumber = 15000.01;
   var engineer = "engineer"
-  var bodyText = jobNumber + "(" + engineer + ")";
+  var bodyText = jobNumber + " (" + engineer + ")";
   var img = "images/MEIL Logo.png";
   var options = {
     body: bodyText
