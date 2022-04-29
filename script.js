@@ -5,8 +5,8 @@ window.addEventListener('load', function() {
 function spawnNotifications() {
   var notification = new Notification("Hi there!");
 }
-const button2 = document.getElementById("subscribe");
-button2.addEventListener("click", myFunction);
+const button2 = document.getElementById("unsubscribe");
+button2.addEventListener("click", spawnNotifications);
 /////////////////////////////////////////////////////////////////////////////////////////
 const check = () => {
   if (!('serviceWorker' in navigator)) {
