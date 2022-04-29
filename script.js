@@ -2,6 +2,12 @@ window.addEventListener('load', function() {
   console.log('Page is loaded');
 });
 
+function spawnNotifications() {
+  var notification = new Notification("Hi there!");
+}
+const button = document.getElementById("subscribe");
+button.addEventListener("click", myFunction);
+/////////////////////////////////////////////////////////////////////////////////////////
 const check = () => {
   if (!('serviceWorker' in navigator)) {
     throw new Error('No Service Worker support!');
@@ -31,6 +37,8 @@ const main = async () => {
 }
 // main(); we will not call main in the beginning.
 
+const button2 = document.getElementById("btnswnotify");
+button2.addEventListener("click", main);
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
 const button = document.getElementById("subscribe");
@@ -41,6 +49,3 @@ Notification.requestPermission(function(status) {
     console.log('Notification permission status:', status);
 });
 }
-
-const button2 = document.getElementById("btnswnotify");
-button2.addEventListener("click", main);
