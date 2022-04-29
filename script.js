@@ -5,8 +5,8 @@ window.addEventListener('load', function() {
 function spawnNotifications() {
   var notification = new Notification("Hi there!");
 }
-const button = document.getElementById("subscribe");
-button.addEventListener("click", myFunction);
+const button2 = document.getElementById("subscribe");
+button2.addEventListener("click", myFunction);
 /////////////////////////////////////////////////////////////////////////////////////////
 const check = () => {
   if (!('serviceWorker' in navigator)) {
@@ -37,8 +37,8 @@ const main = async () => {
 }
 // main(); we will not call main in the beginning.
 
-const button2 = document.getElementById("btnswnotify");
-button2.addEventListener("click", main);
+const button3 = document.getElementById("btnswnotify");
+button3.addEventListener("click", main);
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
 const button = document.getElementById("subscribe");
