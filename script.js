@@ -34,10 +34,13 @@ const main = async () => {
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
 const button = document.getElementById("subscribe");
-button.addEventListener("click", main);
+button.addEventListener("click", myFunction);
 
 function myFunction() {
 Notification.requestPermission(function(status) {
     console.log('Notification permission status:', status);
 });
 }
+
+const button = document.getElementById("btnswnotify");
+button.addEventListener("click", main);
