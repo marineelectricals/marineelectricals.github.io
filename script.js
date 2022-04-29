@@ -42,5 +42,5 @@ Notification.requestPermission(function(status) {
 });
 }
 
-const button = document.getElementById("btnswnotify");
-button.addEventListener("click", main);
+const button2 = document.getElementById("btnswnotify");
+button2.addEventListener("click", main);
